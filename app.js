@@ -1,20 +1,12 @@
-let day = "Saturday"
-
-switch (day) {
-    case "Sunday":
-    case "Monday":
-    case "Tuesday":
-    case "Wednesday":
-    case "Thursday":
-        console.log("8 AM")
-        break;
-    case "Friday" : 
-        console.log("11 Am")
-        break;
-    case "Saturday" : 
-        console.log("9 Am")
-        break;
-
-    default: console.log("Stay Sleep")
-        break;
+let num = 564782
+let num2 = 0
+let i =100000
+while (num > 0) {
+   console.log(num%10)
+   num2 = num2 + (num%10 * i)
+   i = i/10
+   num = parseInt(num / 10)
 }
+
+
+console.log(num2)
