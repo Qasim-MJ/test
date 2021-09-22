@@ -1,12 +1,23 @@
-let num = 564782
-let num2 = 0
-let i =100000
-while (num > 0) {
-   console.log(num%10)
-   num2 = num2 + (num%10 * i)
-   i = i/10
-   num = parseInt(num / 10)
-}
+let car = {
 
+    color : "Red",
+    
+    brand: "BMW",
+    
+    'make date' : 1990,
+    
+    engine : {
+    
+    Size : 3500,
+    
+    Cylinders : 6,
+    
+    Valve : 16 
+    
+    }
+    
+    }
 
-console.log(num2)
+    for(key in car.engine) {
+        console.log(key, car.engine[key])
+    }
