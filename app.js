@@ -1,12 +1,12 @@
-let add = (num1, num2)=>{
-    if (num1<0 || num2<0) {
-        return "Negitive number"
-    }
-    else {
-        return num1 + num2
+function user (name,password){
+    this.name = name;
+    this.password = password;
+    this.loggedin = ()=>{
+        console.log(`${this.name} is logged in`);
     }
 }
 
-let result = add(5,6)
+let user1 = new user("Qasim", "Qasim@671994");
+let user2 = new user("Sama" , "Sama@1281969");
 
-console.log(result)
+console.log(user1.loggedin(), user2.loggedin());
