@@ -1,13 +1,15 @@
-function user (name,password){
-    this.name = name;
-    this.password = password;
-    this.loggedin = ()=>{
-        console.log(`${this.name} is logged in`);
-    }
-}
+let array1 = new Array()
+let array2 = new Array()
 
-let user1 = new user("Qasim", "Qasim@671994");
-let user2 = new user("Sama" , "Sama@1281969");
+array1.push(5 , 6 ,7 ,8 ,9)
+let [a,b,c,,d] = array1
 
-console.log(user1.loggedin(), user2.loggedin());
-console.log(user1,user2);
+console.log(d)
+
+let msg = "My name is Qasim Mohamme Jawad"
+
+array2 = msg.split(' ')
+
+let [a1,b1,,...d1] = array2 
+
+console.log(d1)
